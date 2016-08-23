@@ -35,7 +35,7 @@ The front-end uses the data in this fashion. Please keep in mind that the front-
 I think there are many ways in which this application could be improved.The biggest deficiency in the application is that it is very slow. There is a tremendous amount of data that needs to be processed; the bulk of which is the GeoJSON. There are several ways to counteract the slow nature of the current application. Immediately I would use a tool like Redis to cache some of the rarely changing data. Some things that I might store in the Redis data structure might include:
 
 	• State GeoJSON boundaries
-	• The latitude and longitude for counties
+	• The latitude and longitude for states
 	• Daily rainfall for states
 	• Which states grow soybeans
 	• Daily rainfall for states
@@ -43,7 +43,7 @@ I think there are many ways in which this application could be improved.The bigg
 	• The latitude and longitude for counties
 	• Daily rainfall for counties
 
-Another thing that I would improve upon is the accuracy of the data. Because the data comes from so many sources, the routes become more complicated and there is much higher likelihood that the data becomes corrupted in some way. Were this to be a production application I would look for more encompassing sources of data. (I believe I found some options that would be very well suited for this task, however they required a fee to use)
+Another thing that I would improve upon is the accuracy of the data. Because the data comes from so many sources, the routes become more complicated and there is much higher likelihood that the data becomes corrupted in some way. Were this to be a production application, I would look for more encompassing sources of data. (I believe I found some options that would be very well suited for this task, however they required a fee to use)
 
 Lastly, I would finish off the front end and apply some additional tools. A feature that might be useful is search bar for example. I would most likely implement this with a trie data structure for fast searches. Additionally I might use a tool like https://www.amcharts.com/javascript-maps/ for the mapping feature instead of leaflet to give a cleaner, more professional look.
 
