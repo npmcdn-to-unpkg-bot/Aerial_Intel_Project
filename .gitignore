@@ -1,12 +1,2 @@
-.idea
 node_modules
-npm-debug.log
-public
 .DS_Store
-coverage
-.babelrc
-.editorconfig
-.eslintrc
-Procfile
-gulpfile.js
-seed.js
